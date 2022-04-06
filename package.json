@@ -19,6 +19,7 @@
   "bugs": {
     "url": "https://github.com/hq90freedom/framework-ts/issues"
   },
+  "git-checks": "false",
   "homepage": "https://github.com/hq90freedom/framework-ts#readme",
   "devDependencies": {
     "@rollup/plugin-json": "^4.1.0",
