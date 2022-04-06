@@ -1,7 +1,7 @@
 {
-  "name": "framework-ts",
+  "name": "fr-ts",
   "version": "1.0.0",
-  "description": "framework-ts",
+  "description": "fr-ts",
   "main": "dist/bundle.js",
   "scripts": {
     "build": "rollup --config"
