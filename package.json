@@ -1,6 +1,6 @@
 {
-  "name": "framework-ts",
-  "version": "1.0.1",
+  "name": "fr-ts",
+  "version": "1.0.0",
   "description": "framework-ts",
   "main": "dist/bundle.js",
   "scripts": {
