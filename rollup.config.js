@@ -9,6 +9,8 @@ export default {
         name: 'BOT'
     },
     plugins: [
-        esbuild({})
+        esbuild({
+            minify: true
+        })
     ]
 }
