@@ -16,30 +16,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2.0.1
-        with:
-          version: 6.32.4
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: 'pnpm'
-          
-      - run: pnpm install
+      - run: npm install
+      - run: npm run build
 
   publish-npm:
     needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2.0.1
-        with:
-          version: 6.32.4
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: 'pnpm'
-      - run: pnpm install
+          registry-url: https://registry.npmjs.org/
+      - run: npm install
+      - run: npm run build
+      - run: npm publish
         env:
-            NODE_AUTH_TOKEN: ${{secrets.npm_token}}
-      - run: pnpm build
-      - run: pnpm publish
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
