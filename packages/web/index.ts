@@ -1,4 +1,4 @@
 export default function () {
-    console.log('测试一下咯')
+    console.log('测试')
     return '123'
 }
