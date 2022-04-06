@@ -1,7 +1,7 @@
 {
-  "name": "bot-framework",
+  "name": "botfr-ts",
   "version": "1.0.0",
-  "description": "bot-framework",
+  "description": "botfr-ts",
   "main": "dist/bundle.js",
   "scripts": {
     "build": "rollup --config"
