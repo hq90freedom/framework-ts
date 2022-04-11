@@ -1,29 +1,22 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "outDir": "dist",
-    "sourceMap": false,
-    "target": "es2015",
-    "useDefineForClassFields": false,
+    "target": "esnext",
+    "useDefineForClassFields": true,
     "module": "esnext",
     "moduleResolution": "node",
-    "allowJs": false,
     "strict": true,
-    "noUnusedLocals": true,
-    "experimentalDecorators": true,
+    "jsx": "preserve",
+    "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "removeComments": false,
-    "jsx": "preserve",
-    "lib": ["esnext", "dom"],
-    "types": ["node"],
-    "rootDir": "."
+    "lib": ["esnext", "dom", "dom.iterable"]
   },
   "exclude": [
     "node_modules"
   ],
   "include": [
     "packages/**/*.ts",
-    "src/*.ts"
+    "src/*.ts",
+    "types/*.d.ts"
   ]
 }
