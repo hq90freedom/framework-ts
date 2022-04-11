@@ -72,6 +72,6 @@ export interface BOTBridge {
     getAPILevel: () => void
     isChrome: () => boolean
     isAndroid: () => boolean
-    isiOS: () => window.BOT
+    // isiOS: () => window.BOT
     isRtl: () => boolean
 }
